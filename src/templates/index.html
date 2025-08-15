@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TikTok Login Kit</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>TikTok Login Kit (Flask)</h1>
+    <p>Contoh aplikasi login dengan TikTok (OAuth 2.0). Silakan klik tombol di bawah.</p>
+    <a href="/login/tiktok" class="btn">Login with TikTok</a>
+
+    <section class="cards">
+      <div class="card">
+        <h3>Endpoint</h3>
+        <ul>
+          <li><code>/login/tiktok</code> mulai login</li>
+          <li><code>/auth/tiktok/callback</code> callback</li>
+          <li><code>/me</code> user aktif</li>
+          <li><code>/users</code> daftar user</li>
+          <li><code>POST /admin/refresh/&lt;open_id&gt;</code> refresh satu user</li>
+          <li><code>POST /admin/refresh_all</code> refresh semua user</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Tips</h3>
+        <ul>
+          <li>Pastikan <strong>Redirect URI</strong> sama persis dengan yang didaftarkan.</li>
+          <li>Scope default <code>user.info.basic</code> (untuk tampilan & avatar).</li>
+          <li>Token kadaluarsa? Gunakan endpoint refresh di atas.</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

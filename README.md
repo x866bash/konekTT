@@ -13,6 +13,19 @@ Contoh aplikasi Flask untuk **Login dengan TikTok** (OAuth 2.0) yang mendukung b
 - Refresh token per user atau semua user
 - Tombol **Login with TikTok** di halaman utama
 
+## 📂 Struktur Folder
+```bash
+tiktok-login-kit/
+├── src/
+│ ├── app.py # File utama Flask
+│ ├── db.py # Modul SQLite untuk menyimpan akun
+│ ├── oauth_tiktok.py # Proses OAuth TikTok
+│
+├── requirements.txt # Dependensi Python
+├── .env.example # Template file environment (App ID, Secret)
+└── README.md # Dokumentasi proyek
+```
+
 ## Persiapan
 1. Buat app di [TikTok for Developers](https://developers.tiktok.com/).
 2. Aktifkan **Login Kit** dan catat **Client Key** & **Client Secret**.
